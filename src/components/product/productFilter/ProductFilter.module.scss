@@ -1,0 +1,82 @@
+.filter {
+  h4 {
+    margin-top: 1.5rem; /* Increased margin-top for better spacing */
+    font-size: 1.4rem; /* Adjust font-size for better appearance */
+    font-weight: 600; /* Adjust font-weight for better appearance */
+    text-transform: uppercase; /* Make the text uppercase for better appearance */
+    color: #333; /* Change the color of headings */
+  }
+  .category button {
+    display: block;
+    text-align: left;
+    width: 80%;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: #444;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-bottom: 1px solid #777;
+    transition: background-color 0.2s ease; 
+  }
+
+  .category button:hover {
+    background-color: #f1f1f1;
+    color: #333;
+  }
+  // change the background color of the selected category
+  .category button.active {
+    background-color: rgb(246, 91, 34);
+    color: whitesmoke;
+  }
+
+  .brand {
+    margin-top: 1rem; /* Add margin-top for better spacing */
+
+    select {
+      font-size: 1.6rem;
+      font-weight: 300;
+      padding: 5px;
+      color:orangered;
+      width: 80%;
+      border: 1px solid #777;
+      border-radius: 3px;
+      outline: none;
+      appearance: none; 
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5' fill='%23333'%3E%3Cpath d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.5rem center;
+      background-color: white; /* Add this for better appearance */
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .filter {
+    .category button {
+      width: 100%;
+    }
+    .brand {
+      select {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.active {
+  position: relative;
+  padding-left: 1rem;
+  background-color: #f1f1f1; 
+  color: #c40808;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background-color: var(--color-danger);
+}

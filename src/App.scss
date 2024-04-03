@@ -1,0 +1,122 @@
+// // Variables
+// $primary-color: #3f51b5;
+// $secondary-color: #f50057;
+// $white: #ffffff;
+// $black: #000000;
+// $light-gray: #f5f5f5;
+// $dark-gray: #212121;
+
+// // Mixins
+// @mixin flex-center {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// // Reset
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// // Global Styles
+// body {
+//   font-family: "Roboto", sans-serif;
+//   color: $black;
+//   background-color: $light-gray;
+// }
+
+// a {
+//   text-decoration: none;
+//   color: $primary-color;
+// }
+
+// button {
+//   cursor: pointer;
+// }
+
+// // Header
+// .header {
+//   @include flex-center;
+//   background-color: $primary-color;
+//   padding: 1rem 0;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+//   .logo {
+//     font-size: 2rem;
+//     color: $white;
+//   }
+
+//   .nav {
+//     margin-left: auto;
+
+//     .nav-link {
+//       color: $white;
+//       margin-right: 1rem;
+//     }
+//   }
+// }
+
+// // Footer
+// .footer {
+//   background-color: $dark-gray;
+//   padding: 2rem 0;
+//   text-align: center;
+//   color: $white;
+
+//   .footer-links {
+//     display: flex;
+//     justify-content: center;
+//     gap: 2rem;
+//     color: $white;
+//     }
+//     .copyright {
+//         margin-top: 1rem;
+//         }
+//         }
+        
+//         // Toast Container
+//         .Toastify__toast-container {
+//         @include flex-center;
+//         }
+        
+//         // Pages
+//         .page-container {
+//         padding: 2rem;
+//         }
+        
+//         // NotFound
+//         .not-found {
+//         @include flex-center;
+//         flex-direction: column;
+//         min-height: 60vh;
+        
+//         h1 {
+//         font-size: 5rem;
+//         margin-bottom: 1rem;
+//         }
+//         }
+        
+//         // Admin
+//         .admin {
+//         .admin-heading {
+//         font-size: 2rem;
+//         margin-bottom: 1rem;
+//         }
+//         }
+        
+//         // Product Details
+//         .product-details {
+//         display: flex;
+//         gap: 2rem;
+//         margin-bottom: 2rem;
+        
+//         .image-container {
+//         flex: 1;
+//         }
+        
+//         .details-container {
+//         flex: 1;
+//         }
+//         }
